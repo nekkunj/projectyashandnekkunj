@@ -1,0 +1,38 @@
+body{
+    display:flex;
+    align-items: stretch;
+    height: 100vh;
+    margin:0px;
+    padding: 0px;
+
+}
+.sidebar{
+background-color:lightgrey;
+padding:10px;
+flex-grow: 1;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+background-color: bisque;
+padding: 10px;
+flex-grow: 5;
+align-content: flex-start;
+}
+
+.item{
+    background-color: red;
+    height:100px;
+    width:150px;
+    margin:10px;
+     flex-grow: 1; 
+}
+@media (max-width: 500px){
+    .sidebar{
+        flex-grow: 0;
+        height:100px;
+    }
+    body{
+        flex-direction: column
+    }
+}

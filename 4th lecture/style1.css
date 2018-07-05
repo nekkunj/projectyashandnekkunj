@@ -1,0 +1,47 @@
+nav ul
+{  box-shadow:1px 1px  grey;
+    position: fixed;
+    list-style-type: none;
+    background-color:yellowgreen;  
+
+}
+
+
+
+nav>*>li
+{
+    list-style-type: none;   
+border-right: solid 1px black;
+padding-right: 2px;
+display:inline-block;     
+}
+nav ul ul
+{
+    
+    padding:0px;
+    display:none;
+}
+
+li:hover>ul
+{    
+display:block;
+}
+nav ul >ul{
+    position:absolute;
+top:34px;
+right:470px;
+padding:0px;
+}
+nav ul ul ul{
+    z-index:-15;
+    position:absolute;
+top:20px;
+width:100px;
+    left:59px;
+padding:0px;
+background-color:black;
+color:grey;
+}
+nav ul > li > ul {
+    z-index: -10;
+}

@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>selectors using hover</title>
+        <style> 
+        
+        #u2,#u3,#u4,#u5,#u6,#u7{
+                        display:none;
+        }
+        /*.l1:hover{
+            padding: 0px;
+            margin:0px;
+            color:white;
+        }*/
+        #sub1{
+            display: none;
+        }
+        li{
+            color:gray;
+            background-color:  rgba(0, 0, 0, 0.904);
+            padding:4px;
+            list-style-type: none;
+            
+            font-size:13pt;
+        }
+        li:hover{
+            cursor:pointer;
+            
+        }
+        #u2 li:hover,#u3 li:hover,#u4 li:hover,#u5 li:hover,#u6 li:hover,#u7 li:hover{
+                        color:orangered;
+        }
+        
+        .l1{
+            padding:0px;
+            
+            
+            float:left;
+            border-style: solid;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-color: black;
+            border-width: 1px;
+            background-color:white;    
+            
+            margin:0px;
+            display:inline-table;
+            }
+        #about:hover #u2,#classroom:hover #u3,#online:hover #u4,#resourses:hover #u5,#competition:hover #u6,#contact:hover #u7{
+            display:inline;
+            
+            margin-top: 15px;
+            
+           }
+           #junior:hover #sub1{
+               
+               display:inline-table;
+               margin-left: 10px;
+               padding-bottom: 0px;
+            padding: 0px;
+            background-color:  rgba(0, 0, 0, 0.904);
+           }
+           a{
+            text-decoration: none;
+               color:gray;
+           }
+           a:hover{
+               color:orangered;
+           }
+        </style>
+    </head>
+    <body>
+        
+
+        <ul id="u1">
+            <li class="l1" ><a>&nbsp;Campus Ambassadors&nbsp;</a></li>
+            <li id="about" class="l1" ><a>&nbsp;About us&nbsp;</a>
+                <ul id="u2">
+                    <li    >Introduction</li>
+                    <li   >Why Coding blocks</li>
+                    <li   >Our Team</li>
+                    <li   >Brochure</li>
+                    <li   >Reviews</li>
+                    <li   >Wall Of fame</li>
+                    <li   >Events</li>
+                    <li   >News leters</li>
+                    <li   >Alumini Portal</li>
+                </ul>
+            </li>
+            <li class="l1" id="classroom"><a href="https://codingblocks.com/classroom-courses/">&nbsp;Classroom courses&nbsp;</a>
+                <ul id="u3">
+                    <li id="junior">Junior
+                        
+                    </li>
+                    <li>Beginner</li>
+                    <li>Advanced</li>
+                    <li>Development</li>
+                    <li>Bootcamps</li>
+                </ul>
+            </li>
+            <li class="l1" id="online"><a>&nbsp;Online Courses&nbsp;</a>
+                <ul id="u4">
+                    <li><a href="https://codingblocks.com/online-courses/coding-interview-preparation-online-bootcamp.html">Interview prep<br>Bootcamp</a></li>
+                    <li>Interview prep<br>Course</li>
+                    <li>C++<br>(DS and Algo)</li>
+                    <li>Java<br>(DS and Algo)</li>
+                    <li>Web Development<br>(NodeJs)</li>
+                    <li>Competitive<br>Programming</li>
+                    <li>Machine Learning</li>
+                    <li>Android dev(Java <br>and Kotlin)</li>
+                </ul>
+            </li>
+            <li class="l1" id="resourses"><a>&nbsp;Resourses&nbsp;</a>
+                <ul id="u5">
+                    <li>Hacker Blocks</li>
+                    <li>Tutorials</li>
+                    <li>Competitive <br>Programming Study <br>Material</li>
+                    <li>Online Ide</li>
+                    <li>Blog</li>
+                    <li>Apps</li>
+                    <li>Podcast</li>
+                </ul>
+            </li>
+            <li class="l1" id="competition">&nbsp;Competition&nbsp;
+                <ul id="u6">
+                    <li>Hacker Blocks</li>
+                    <li>Boss</li>
+                </ul>
+            </li>
+            <li class="l1" id="contact"><a>&nbsp;Contact Us&nbsp;</a>
+                <ul id="u7">
+                    <li>Centers</li>
+                    <li>Signup</li>
+                    <li>Careers</li>
+                    <li>Hire Students</li>
+                    <li>Request a<br>Workshop</li>
+                </ul>
+            </li>
+                  </ul>      
+    </body>
+</html>

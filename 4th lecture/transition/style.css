@@ -1,0 +1,13 @@
+div{
+    height:20px;
+    margin: 20px;
+    padding: 20px;
+    width: 100px;
+    background-color: red;
+}
+div:hover{
+    height:50px;
+    width:50px;
+    background-color: blue;
+    transition: height 3s,background-color 5s;
+}

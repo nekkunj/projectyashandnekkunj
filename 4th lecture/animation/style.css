@@ -1,0 +1,59 @@
+
+#div1{
+    transform:translate(40px,120px)
+}
+#div5{                  
+    position:relative;
+    bottom:170px;
+    left:960px;
+    
+}
+#div2{ /* left:106px left:384px*/
+    position: relative;
+     bottom:210px;
+    left:30px; 
+    animation: games 5s linear 0 infinite alternate none;
+    animation-play-state: paused;
+
+}
+    
+        #div1:active ~ #div2
+    {
+        animation-play-state:running;
+    }
+
+#div3{
+    
+    position:relative;
+    bottom:560px;
+    left:220px;
+    
+    animation: moves 1s linear 0 infinite alternate none;
+}
+#div4{
+    
+    position:relative;
+    bottom:650px;
+    left:500px;
+animation: moves 1.3s linear 3s infinite alternate none;
+}
+@keyframes moves{
+    0%,100%
+    {
+        transform:translate(0px,0px);
+    }
+    50%{
+        transform:translate(0px,400px);
+    }
+}
+@keyframes games
+{
+    0%,100%
+    {
+    transform:translate(0px,0px);        
+    }
+    50%
+    {
+    transform:translate(900px,0px);
+    }
+}

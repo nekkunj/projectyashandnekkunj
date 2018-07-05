@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>hover</title>
+        <style>
+           /* *{
+                margin-right:350px;
+            }*/
+            
+            #u1,#u2,#u3,#u4,#u5,#u6{
+             display: none;
+            }
+
+   #l1:hover #u1,#l2:hover #u2,#l3:hover #u3,#l4:hover #u4,#l5:hover #u5,#l6:hover #u6{          
+          display:block;
+           }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>1</li>
+            <li id="l1">2
+                <ul id="u1">
+                    <li id="l2">2.1
+                    <ul id="u2">
+                        <li>2.1.1</li>
+                        <li>2.1.2</li>
+                    </ul>
+                    </li>
+                    <li>2.2</li>
+                    <li id="l3">2.3
+                        <ul id="u3">
+                            <li>2.3.1</li>
+                            <li id="l4">2.3.2
+                                <ul id="u4"><li>2.3.2.1</li>
+                                <li>2.3.2.2</li>
+                                <li>2.3.2.3</li></ul>
+                            </li>
+                            <li>2.3.3</li>
+                        </ul>
+                    </li>
+                    <li>2.4</li>
+                </ul>
+                
+            </li>
+            <li id="l5">3
+                <ul id="u5">
+                    <li>3.1</li>
+                    <li id="l6">3.2
+                        <ul id="u6">
+                            <li>3.2.1</li>
+                            <li>3.2.2</li>
+                        </ul>
+                    </li>
+                    <li>3.3</li>
+                </ul>
+            </li>
+            <li>4</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+div div{
+    display:none
+}
+#slideshow{
+    transform:translate(100px,100px);
+    width:326px;
+    height:155px;
+    border:solid 1px ;
+}
+span{
+    background-color: black;
+    color:grey;
+    position:relative;
+left:100px;
+top:190px;
+z-index:1
+}
+span+span{
+    left:404px;
+}
+span:active{
+    background-color:white;
+}
+#right:focus+div #first{
+    display:none
+}
+#right:focus+div #second{
+    z-index: 1;
+display:block;
+}
+
