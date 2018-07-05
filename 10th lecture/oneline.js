@@ -1,1 +1,0 @@
-setTimeout((id)=>{clearInterval(id)},2000,setInterval(()=>{console.log('A')},100))
